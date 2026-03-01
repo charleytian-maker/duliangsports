@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/images"
+public_folder: "/images"
+collections:
+  - name: "products"
+    label: "Sports Gear"
+    folder: "content/products"
+    create: true
+    fields:
+      - {label: "Product Name", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Basketball", "Rackets", "Accessories"]}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "body", widget: "markdown"}
